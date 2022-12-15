@@ -1,0 +1,26 @@
+import java.util.*;
+class Kthbit{
+	public static void main(String args[]){
+		Scanner sc=new Scanner (System.in);
+		int n,k;
+
+		System.out.println("Enter the number:");
+		n=sc.nextInt();
+		System.out.println("Enter Kth index:");
+		k=sc.nextInt();
+		Kthbit k1=new Kthbit();
+		k1.isSet(n,k);
+
+	}
+}
+
+void isSet(int n,int k){
+	int x=1;
+	for(int i=0;i<(k-1);i++){
+		x=(1<<(k-1));
+		if((n&x)!=0)
+			print("No");
+		else
+			print("Yes");
+	}
+}
