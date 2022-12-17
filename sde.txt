@@ -1,1 +1,2 @@
 Hi I am trying to connect to github
+this is the second line
